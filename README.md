@@ -1,1 +1,1 @@
-Projeto de faculdade de um site de uma drogaria local
+Projeto de um site para uma drogaria local
