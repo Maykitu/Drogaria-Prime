@@ -1,7 +1,8 @@
-#**Projeto Drogaria Prime - Sistema de Pontos e Login**
+**#Projeto Drogaria Prime - Sistema de Pontos e Login**
 Este projeto é um sistema de login e gerenciamento de pontos para a Drogaria Prime. Ele permite que os usuários façam login usando apenas o número de telefone, visualizem seus pontos acumulados e vejam informações sobre a empresa.
 
-##**Funcionalidades**
+**##Funcionalidades**
+
 1.Login Simples:
 
 Os usuários podem fazer login apenas com o número de telefone.
@@ -24,7 +25,7 @@ Mostra um mapa interativo com a localização da drogaria.
 
 Barra de navegação com links para "Minha Conta", "Ver Meus Pontos" e "Sobre Nós".
 
-##**Tecnologias Utilizadas**
+**##Tecnologias Utilizadas**
 Front-End:
 
 -HTML
