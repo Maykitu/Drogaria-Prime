@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+        /* Reset básico */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Barra de Navegação Vermelha */
+        .navbar {
+            background-color: #ff4757; /* Vermelho vibrante */
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ff6b81; /* Vermelho mais claro ao passar o mouse */
+        }
+
+        /* Container do Sobre Nós */
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 70px); /* Ajuste para a altura da navbar */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .about-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .map-container {
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <a href="minha_conta.html">Minha Conta</a>
+        <a href="tela_pontos.html">Ver Meus Pontos</a>
+        <a href="sobre.html">Sobre Nós</a>
+    </div>
+
+    <!-- Tela Sobre Nós -->
+    <div class="about-container">
+        <div class="about-content">
+            <h2>Sobre Nós</h2>
+            <p>
+                Bem-vindo à <strong>Drogaria Prime</strong>! Estamos localizados na:<br>
+                <strong>Avenida Amaro Cavalcanti, 2626</strong>.
+            </p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.328540756441!2d-43.17946668447548!3d-22.90263784346782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e4a2f9d1d%3A0x3c8f5e7b6a5b5b5b!2sAvenida%20Amaro%20Cavalcanti%2C%202626%20-%20Rio%20de%20Janeiro%2C%20RJ%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1633020000000!5m2!1spt-BR!2sus"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

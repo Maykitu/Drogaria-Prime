@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Acumulados</title>
+    <style>
+        /* Reset básico */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Barra de Navegação Vermelha */
+        .navbar {
+            background-color: #ff4757; /* Vermelho vibrante */
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ff6b81; /* Vermelho mais claro ao passar o mouse */
+        }
+
+        /* Container de Pontos */
+        .points-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 70px); /* Ajuste para a altura da navbar */
+            text-align: center;
+        }
+
+        .points-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .points-content h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .points-content .discount {
+            font-size: 1.3em;
+            color: #666;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <a href="minha_conta.html">Minha Conta</a>
+        <a href="tela_pontos.html">Ver Meus Pontos</a>
+        <a href="sobre.html">Sobre Nós</a>
+    </div>
+
+    <!-- Tela de Pontos -->
+    <div class="points-container">
+        <div class="points-content">
+            <h1 id="points">1500 Pontos</h1>
+            <div class="discount" id="discount">10% de Desconto</div>
+        </div>
+   

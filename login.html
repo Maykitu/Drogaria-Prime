@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Reset básico */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Barra de Navegação Vermelha */
+        .navbar {
+            background-color: #ff4757; /* Vermelho vibrante */
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ff6b81; /* Vermelho mais claro ao passar o mouse */
+        }
+
+        /* Container de Login */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 70px); /* Ajuste para a altura da navbar */
+            text-align: center;
+        }
+
+        .login-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-content input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-content input:focus {
+            border-color: #ff4757;
+            outline: none;
+        }
+
+        .login-content button {
+            padding: 12px 20px;
+            background-color: #ff4757;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .login-content button:hover {
+            background-color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <a href="minha_conta.html">Minha Conta</a>
+        <a href="tela_pontos.html">Ver Meus Pontos</a>
+        <a href="sobre.html">Sobre Nós</a>
+    </div>
+
+    <!-- Tela de Login -->
+    <div class="login-container">
+        <div class="login-content">
+            <h2>Login</h2>
+            <input type="tel" id="phone" placeholder="Número de Telefone" required>
+            <button onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const phone = document.getElementById('phone').value;
+            if (phone) {
+                // Aqui você pode fazer uma requisição para o backend para validar o número de telefone
+                // e redirecionar para a próxima tela.
+                window.location.href = 'tela_pontos.html';
+            } else {
+                alert('Por favor, insira seu número de telefone.');
+            }
+        }
+    </script>
+</body>
+</html>
